@@ -1,12 +1,12 @@
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/contacts.reducer';
+import { addContact } from 'redux/operation';
 import css from './PhoneForm.module.css';
 
 const PhoneForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(state => state.contactsBook.contacts);
+  const contacts = useSelector(state => state.contacts.contacts);
 
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');

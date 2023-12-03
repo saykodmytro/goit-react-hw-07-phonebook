@@ -4,7 +4,7 @@ import { filteredContact } from 'redux/contacts.reducer';
 import css from './Filter.module.css';
 
 export const Filter = () => {
-  const filter = useSelector(state => state.contactsBook.filter);
+  const filter = useSelector(state => state.contacts.filter);
   const dispatch = useDispatch();
 
   const handleFilterChange = e => {
