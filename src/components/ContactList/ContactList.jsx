@@ -13,14 +13,6 @@ const ContactList = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-  // const handleDelete = contactId => {
-  //   dispatch(deleteContact(contactId));
-  // };
-
-  // const filteredContacts = contacts.filter(contact =>
-  //   contact.name.toLowerCase().includes(filter.toLowerCase())
-  // );
-
   return (
     <ul className={css.list}>
       {contacts.length > 0 &&
